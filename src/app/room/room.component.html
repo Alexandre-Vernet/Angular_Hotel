@@ -1,1 +1,4 @@
-<p>roomId =  {{roomId}} </p>
+<p>roomId = {{roomId}} </p>
+
+<button (click)="call()" [disabled]="isDoNotDisturb">Call</button>
+<button (click)="setIsDoNotDisturb()">Switch do not disturb</button>

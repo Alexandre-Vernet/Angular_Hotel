@@ -8,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class RoomComponent implements OnInit {
 
   roomId: number = 1;
-  
+  isDoNotDisturb: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  call(): void {
+    console.log("DRING DRING");
+  }
+
+  setIsDoNotDisturb(): void {
+    this.isDoNotDisturb = !this.isDoNotDisturb;
   }
 }
