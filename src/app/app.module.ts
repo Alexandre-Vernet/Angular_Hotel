@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { RoomComponent } from './room/room.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
-    RoomComponent
+    RoomComponent,
    ],
   imports: [
     BrowserModule,

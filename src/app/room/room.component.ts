@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoomComponent implements OnInit {
 
+  roomId: number = 1;
+  
   constructor() { }
 
   ngOnInit(): void {
-      
   }
-
 }
