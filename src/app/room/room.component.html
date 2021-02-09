@@ -1,4 +1,19 @@
+<h2>Your id</h2>
 <p>roomId = {{roomId}} </p>
 
 <button (click)="call()" [disabled]="isDoNotDisturb">Call</button>
 <button (click)="setIsDoNotDisturb()">Switch do not disturb</button>
+
+<br><br>
+<hr>
+<br>
+
+<h2>Edit your name</h2>
+<span *ngIf="guest"> Guest : {{guest}} </span>
+<input type="text" [(ngModel)]="guest" placeholder="Enter your name">
+
+<br><br>
+<hr>
+<br>
+
+<!-- <app-fridge [isAvailable]="available"></app-fridge> -->

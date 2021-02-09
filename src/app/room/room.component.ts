@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-room',
@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoomComponent implements OnInit {
 
-  roomId: number = 1;
+  @Input() roomId: number = 1;
   isDoNotDisturb: boolean = false;
+  guest: string = "Tobby Bobby Bob Brun";
+
+  @Input() isAvailable: boolean = false;
 
   constructor() { }
 
@@ -16,7 +19,7 @@ export class RoomComponent implements OnInit {
   }
 
   call(): void {
-    console.log("DRING DRING");
+    console.log("knock knock " + this.guest);
   }
 
   setIsDoNotDisturb(): void {
