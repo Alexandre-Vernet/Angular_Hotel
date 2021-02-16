@@ -17,7 +17,6 @@ import { FridgeComponent } from './fridge/fridge.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

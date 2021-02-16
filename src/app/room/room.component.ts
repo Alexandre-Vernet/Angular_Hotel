@@ -15,8 +15,7 @@ export class RoomComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   call(): void {
     console.log("knock knock " + this.guest);
