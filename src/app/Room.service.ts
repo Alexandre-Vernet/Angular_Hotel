@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { IRoom } from "../IRoom";
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ export class RoomService {
 
   constructor() { }
 
-  rooms: { id: number }[] = [
+  rooms: IRoom[] = [
     {
       id: 1
     },

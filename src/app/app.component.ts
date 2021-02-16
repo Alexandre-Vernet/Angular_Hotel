@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IRoom } from 'src/IRoom';
 import { RoomService } from './Room.service';
 
 @Component({
@@ -9,10 +10,10 @@ import { RoomService } from './Room.service';
 export class AppComponent {
   title = 'Hotel';
 
-  rooms: {id: number}[];
+  rooms: IRoom[];
 
   constructor(private roomService: RoomService) {
     this.rooms = this.roomService.rooms;
-   }
+  }
 
 }
